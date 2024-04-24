@@ -76,6 +76,7 @@
 
    let btnED = document.getElementById("btnED"); //получаем кнопку активировать/деактивировать
    btnED.addEventListener('click', function(){ //вешаем событие на нажатие html-кнопки
+      tg.sendData("test");
       if (tg.MainButton.isActive){ //если кнопка показана 
          tg.MainButton.setParams({"color": "#E0FFFF"}); //меняем цвет
          tg.MainButton.disable() //скрываем кнопку 
